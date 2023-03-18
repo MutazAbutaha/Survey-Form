@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <head>
+        <h1 id="title">Customer Feedback Form</h1>
+        <p id="description">Thank you for taking the time to help us improve our products or services.</p>
+    </head>
+    <body>
+        <div class="bg-img">
+        <form id="survey-form">
+            <fieldset>
+            <label for="name" id="name-label">Name: <input id="name" type="text" required placeholder="enter your Name: "></label><br>
+            <label for="number" id="number-label">Age: <input id="number" type="number" required min="10" max="100" placeholder="your Age:"></label><br>
+            <label for="email"  id="email-label">Email: <input id="email" type="email" required placeholder="enter your Email: "></label><br>
+            </fieldset>
+            <fieldset>
+            <label for="select">How satisfied were you with the product/service? </label>
+            <select id="dropdown">
+                <option value="Very Satisfied">Very Satisfied</option>
+                <option value="Satisfied">Satisfied</option>
+                <option value="Neutral">Neutral</option>
+                <option value="Dissatisfied">Dissatisfied</option>
+                <option value="Very Dissatisfied">Very Dissatisfied</option>
+            </select><br><br><br>
+            <label>How likely are you to recommend the product/service to others?</label>
+            <label for="likely"><input id="likely" type="radio" name="likely" class="inline" value="likely"/>Very Likely</label>
+            <label for="unlikely"><input id="unlikely" type="radio" name="likely" class="inline" value="unlikely"/>Unlikely</label><br><br>
+            <label for="inline">Which of our branches you did visit before?<br>
+                <input  type="checkbox"  value="amman" class="inline" />Amman<br>
+                <input  type="checkbox"  value="irbid" class="inline" />Irbid<br>
+                <input  type="checkbox"  value="zarqa" class="inline" />Zarqa<br>
+                <input  type="checkbox"  value="aqapa" class="inline" />Aqapa<br>
+              </label><br>
+            </fieldset>
+            <fieldset>
+                <label for="comments">Additional comments:<br> 
+                    <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Type your comments here please..."></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" id="submit" value="Submit" />
+        </form>
+        </div>
+    </body>
+    <footer id="footer">
+        <p>MUTAZ ABUTAHA<br> 
+    </footer>
+</body>
+</html>
